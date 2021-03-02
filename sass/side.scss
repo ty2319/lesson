@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "settings";
+
+main nav {
+	@include fixB(35%,1em,10);
+	text-align	: right;
+	display 	: none;
+	font-weight : bold
+		;
+		
+		li {
+			list-style: none;
+		
+			&:nth-of-type(1) {
+				a {
+					color: #5FD9FF;
+				}
+			}
+		
+			&:nth-of-type(2) {
+				a {
+					color: $blue;
+				}
+			}
+
+			&:nth-of-type(3) {
+				a {
+					color: $green;
+				}
+			}
+
+			&:nth-of-type(4) {
+				a {
+					color: $orange;
+				}
+			}
+	
+			span {
+				display: none;
+			}
+		}
+		
+	.on,.on a {
+		text-decoration: underline;
+	}
+}
+
+#modal {
+	@include fixT(0,0,9);
+	width			: $max;
+	height			: $max;
+	background-color: $modal;
+}

@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "settings";// Scss Document
+
+footer {
+	color 			: $white;
+	background-color: $orange;
+	text-align 		: center;
+	display 		: block;
+	padding 		: 1em;
+}

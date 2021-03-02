@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "settings";
+
+body > header {
+	background 	: url("../img/back.jpg") no-repeat fixed center;
+	border 	 	: #5FD9FF solid 10px;
+	position 	: $r;
+	z-index 	: 4;
+	
+	.back {
+		background-color: $modal1;
+	}
+	
+	h1 {
+		margin: 2em;
+	}
+	
+	h2 {
+		width : $max * 0.9;
+		margin: -4em 0 0 2%;
+		position 	: $r;
+		z-index 	: 4;
+		
+		img {
+			width : $max;
+			height: auto;
+		}
+	}
+	
+	nav {
+		width 		: 46.5%;
+		margin 		: -4.5em auto 3em auto;
+		line-height : 1em !important;
+	
+		@include media($ten) {
+			margin-top: -1em;
+		}
+		
+		ul {
+			display 	 	: flex;
+			justify-content : space-between;
+	
+			@include media($ten) {
+  				flex-direction : column;
+				justify-content: space-around;
+			}
+			
+			li {
+				width: 31%;
+	
+				@include media($ten) {
+					width: $max;
+					margin-bottom: 1em;
+				}
+			
+				a {
+					display 	: block;
+					text-align  : center;
+					font-weight : bold;
+					color 		: $white;
+					padding 	: 0.5em 0.5em 0.3em 0.5em;
+					box-sizing 	: border-box;
+					
+					i {
+						float: left;
+						margin-top: -0.05em;
+					}
+
+					span {
+						display 	: block;
+						font-size 	: 0.7em;
+					}
+				}
+
+				&:nth-of-type(1) {
+					a {
+						background-color: $blue;
+					}
+				}
+
+				&:nth-of-type(2) {
+					a {
+						background-color: $green;
+					}
+				}
+
+				&:nth-of-type(3) {
+					a {
+						background-color: $orange;
+					}
+				}
+			}
+		}
+	}
+	
+	p {
+		text-align 	: center;
+		width 	  	: 46.5%;
+		margin 		: 2em auto;
+		
+		&:nth-of-type(2){
+			font-size : 3em;
+			transform : rotate(90deg);
+			margin: 1em auto 0 auto;
+			
+			a {
+				color: $black;
+			}
+		}
+	}
+}

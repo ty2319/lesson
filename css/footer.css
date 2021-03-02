@@ -1,0 +1,9 @@
+/* CSS Document */
+/* line 6, ../sass/footer.scss */
+footer {
+  color: #fff;
+  background-color: #FFB303;
+  text-align: center;
+  display: block;
+  padding: 1em;
+}

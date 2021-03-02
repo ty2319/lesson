@@ -1,0 +1,110 @@
+/* CSS Document */
+/* line 6, ../sass/header.scss */
+body > header {
+  background: url("../img/back.jpg") no-repeat fixed center;
+  border: #5FD9FF solid 10px;
+  position: relative;
+  z-index: 4;
+}
+/* line 12, ../sass/header.scss */
+body > header .back {
+  background-color: rgba(95, 217, 255, 0.5);
+}
+/* line 16, ../sass/header.scss */
+body > header h1 {
+  margin: 2em;
+}
+/* line 20, ../sass/header.scss */
+body > header h2 {
+  width: 90%;
+  margin: -4em 0 0 2%;
+  position: relative;
+  z-index: 4;
+}
+/* line 26, ../sass/header.scss */
+body > header h2 img {
+  width: 100%;
+  height: auto;
+}
+/* line 32, ../sass/header.scss */
+body > header nav {
+  width: 46.5%;
+  margin: -4.5em auto 3em auto;
+  line-height: 1em !important;
+}
+@media all and (max-width: 1000px) {
+  /* line 32, ../sass/header.scss */
+  body > header nav {
+    margin-top: -1em;
+  }
+}
+/* line 41, ../sass/header.scss */
+body > header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+@media all and (max-width: 1000px) {
+  /* line 41, ../sass/header.scss */
+  body > header nav ul {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+/* line 50, ../sass/header.scss */
+body > header nav ul li {
+  width: 31%;
+}
+@media all and (max-width: 1000px) {
+  /* line 50, ../sass/header.scss */
+  body > header nav ul li {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
+/* line 58, ../sass/header.scss */
+body > header nav ul li a {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.5em 0.5em 0.3em 0.5em;
+  box-sizing: border-box;
+}
+/* line 66, ../sass/header.scss */
+body > header nav ul li a i {
+  float: left;
+  margin-top: -0.05em;
+}
+/* line 71, ../sass/header.scss */
+body > header nav ul li a span {
+  display: block;
+  font-size: 0.7em;
+}
+/* line 78, ../sass/header.scss */
+body > header nav ul li:nth-of-type(1) a {
+  background-color: #3FBDFF;
+}
+/* line 84, ../sass/header.scss */
+body > header nav ul li:nth-of-type(2) a {
+  background-color: #0FDC4E;
+}
+/* line 90, ../sass/header.scss */
+body > header nav ul li:nth-of-type(3) a {
+  background-color: #FFB303;
+}
+/* line 98, ../sass/header.scss */
+body > header p {
+  text-align: center;
+  width: 46.5%;
+  margin: 2em auto;
+}
+/* line 103, ../sass/header.scss */
+body > header p:nth-of-type(2) {
+  font-size: 3em;
+  transform: rotate(90deg);
+  margin: 1em auto 0 auto;
+}
+/* line 108, ../sass/header.scss */
+body > header p:nth-of-type(2) a {
+  color: #000;
+}

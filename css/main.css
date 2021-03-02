@@ -1,0 +1,127 @@
+/* CSS Document */
+/* line 8, ../sass/main.scss */
+main article {
+  border: solid 10px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+/* line 14, ../sass/main.scss */
+main article:nth-of-type(1) {
+  border-color: #3FBDFF;
+  z-index: 3;
+}
+/* line 18, ../sass/main.scss */
+main article:nth-of-type(1) .back {
+  background-color: rgba(63, 189, 255, 0.2);
+}
+/* line 22, ../sass/main.scss */
+main article:nth-of-type(1) > header div {
+  background-color: #3FBDFF;
+}
+/* line 26, ../sass/main.scss */
+main article:nth-of-type(1) section header {
+  background-color: #3FBDFF;
+}
+/* line 31, ../sass/main.scss */
+main article:nth-of-type(2) {
+  border-color: #0FDC4E;
+  z-index: 2;
+}
+/* line 35, ../sass/main.scss */
+main article:nth-of-type(2) .back {
+  background-color: rgba(146, 248, 178, 0.5);
+}
+/* line 39, ../sass/main.scss */
+main article:nth-of-type(2) > header div {
+  background-color: #0FDC4E;
+}
+/* line 43, ../sass/main.scss */
+main article:nth-of-type(2) section header {
+  background-color: #0FDC4E;
+}
+/* line 48, ../sass/main.scss */
+main article:nth-of-type(3) {
+  border-color: #FFB303;
+  z-index: 1;
+}
+/* line 52, ../sass/main.scss */
+main article:nth-of-type(3) .back {
+  background-color: rgba(255, 201, 77, 0.5);
+}
+/* line 56, ../sass/main.scss */
+main article:nth-of-type(3) > header div {
+  background-color: #FFB303;
+}
+/* line 60, ../sass/main.scss */
+main article:nth-of-type(3) section header {
+  background-color: #FFB303;
+}
+/* line 65, ../sass/main.scss */
+main article header {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 4;
+}
+/* line 72, ../sass/main.scss */
+main article header div {
+  margin: 0 auto;
+  padding: 0.5em;
+  width: 25%;
+}
+@media all and (max-width: 1000px) {
+  /* line 72, ../sass/main.scss */
+  main article header div {
+    width: 33.33333%;
+  }
+}
+/* line 81, ../sass/main.scss */
+main article header div h3 {
+  font-size: 2em;
+}
+/* line 85, ../sass/main.scss */
+main article header div p {
+  font-size: 0.8em;
+}
+/* line 91, ../sass/main.scss */
+main article section {
+  width: 50%;
+  padding: 3em;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 4;
+}
+@media all and (max-width: 1000px) {
+  /* line 91, ../sass/main.scss */
+  main article section {
+    width: 100%;
+  }
+}
+/* line 102, ../sass/main.scss */
+main article section header {
+  margin-bottom: 2em;
+  padding: 1em 0.5em 0.7em 0.5em;
+}
+/* line 106, ../sass/main.scss */
+main article section header h4 {
+  display: inline;
+  font-size: 1.5em;
+}
+/* line 111, ../sass/main.scss */
+main article section header p {
+  display: inline;
+  margin-left: 3em;
+}
+/* line 117, ../sass/main.scss */
+main article section dt {
+  float: left;
+  width: 20%;
+  margin-right: 2em;
+}
+/* line 122, ../sass/main.scss */
+main article section dt img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "settings";
+
+main {
+	
+	article {
+		border   : solid 10px;
+		display  : flex;
+		flex-wrap: wrap;
+		position : $r;
+				
+		&:nth-of-type(1) {
+			border-color: $blue;
+			z-index: 3;
+			
+			.back {
+				background-color: $modal2;
+			}
+			
+			& > header div {
+				background-color: $blue;
+			}
+			
+			section header {
+				background-color: $blue;
+			}
+		}
+
+		&:nth-of-type(2) {
+			border-color: $green;
+			z-index: 2;
+			
+			.back {
+				background-color: $modal3;
+			}
+			
+			& > header div {
+				background-color: $green;
+			}
+			
+			section header {
+				background-color: $green;
+			}
+		}
+
+		&:nth-of-type(3) {
+			border-color: $orange;
+			z-index: 1;
+			
+			.back {
+				background-color: $modal4;
+			}
+			
+			& > header div {
+				background-color: $orange;
+			}
+			
+			section header {
+				background-color: $orange;
+			}
+		}
+		
+		header {
+			width 		: $max;
+			color 		: $white;
+			text-align 	: center;
+			position 	: $r;
+			z-index 	: 4;
+			
+			div {
+				margin 	: 0 auto;
+				padding : 0.5em;
+				width 	: $max / 4;
+	
+				@include media($ten) {
+					width: $max / 3;
+				}
+			
+				h3 {
+					font-size: 2em;
+				}
+
+				p {
+					font-size: 0.8em;
+				}
+			}
+		}
+		
+		section {
+			width 	 	: $max / 2;
+			padding 	: 3em;
+			box-sizing 	: border-box;
+			position 	: $r;
+			z-index 	: 4;
+	
+			@include media($ten) {
+  				width: $max;
+			}
+			
+			header {
+				margin-bottom: 2em;
+				padding 	 : 1em 0.5em 0.7em 0.5em;
+				
+				h4 {
+					display: inline;
+					font-size: 1.5em;
+				}
+				
+				p {
+					display: inline;
+					margin-left: 3em;
+				}
+			}
+			
+			dt {
+				float:left;
+				width: $max * 0.2;
+				margin-right: 2em;
+				
+				img {
+					width : $max;
+					height: auto;
+				}
+			}
+			
+		}
+	}
+}
