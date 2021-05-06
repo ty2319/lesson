@@ -4,17 +4,24 @@
 @import "settings";
 
 body > header {
-	background 	: url("../img/back.jpg") no-repeat fixed center;
-	border 	 	: #5FD9FF solid 10px;
-	position 	: $r;
-	z-index 	: 4;
+	background 		: url("../img/back.jpg") no-repeat center;
+	background-size : cover;
+	border 	 		: #5FD9FF solid 10px;
+	position 		: $r;
+	z-index 		: 4;
+	
+	@include media($six) {
+		border-width: 7px;
+	}
 	
 	.back {
 		background-color: $modal1;
 	}
 	
 	h1 {
-		margin: 2em;
+		margin  : 2em;
+		position: $r;
+		z-index : 4;
 	}
 	
 	h2 {
@@ -22,6 +29,10 @@ body > header {
 		margin: -4em 0 0 2%;
 		position 	: $r;
 		z-index 	: 4;
+	
+		@include media($six) {
+			margin-left: 7%;
+		}
 		
 		img {
 			width : $max;
@@ -30,12 +41,22 @@ body > header {
 	}
 	
 	nav {
+		position 	:  $r;
 		width 		: 46.5%;
-		margin 		: -4.5em auto 3em auto;
+		margin 		: -14em auto 3em auto;
 		line-height : 1em !important;
+		z-index 	: 5;
 	
 		@include media($ten) {
-			margin-top: -1em;
+			margin-top: -8.5em;
+		}
+	
+		@include media($eight) {
+			margin-top: -5em;
+		}
+	
+		@include media($six) {
+			margin-top: 3em;
 		}
 		
 		ul {
@@ -97,8 +118,11 @@ body > header {
 	
 	p {
 		text-align 	: center;
+		text-shadow : 1px 1px 1px $white , -1px -1px 1px $white;
 		width 	  	: 46.5%;
 		margin 		: 2em auto;
+		position 	: $r;
+		z-index 	: 5;
 		
 		&:nth-of-type(2){
 			font-size : 3em;

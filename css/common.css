@@ -6,14 +6,33 @@ body {
   font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
   line-height: 1.75em !important;
   color: #333333;
+  position: relative;
 }
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1400px) {
+  /* line 7, ../sass/common.scss */
+  body {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 1200px) {
   /* line 7, ../sass/common.scss */
   body {
     font-size: 12px;
   }
 }
-/* line 17, ../sass/common.scss */
+@media all and (max-width: 1000px) {
+  /* line 7, ../sass/common.scss */
+  body {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 600px) {
+  /* line 7, ../sass/common.scss */
+  body {
+    font-size: 12px;
+  }
+}
+/* line 30, ../sass/common.scss */
 body .back {
   position: absolute;
   top: 0;
@@ -23,16 +42,22 @@ body .back {
   height: 10em;
   transform: rotate(-30deg);
 }
-/* line 24, ../sass/common.scss */
+@media all and (max-width: 600px) {
+  /* line 30, ../sass/common.scss */
+  body .back {
+    height: 5em;
+  }
+}
+/* line 41, ../sass/common.scss */
 body a {
   color: #0033cc;
   text-decoration: none;
 }
-/* line 28, ../sass/common.scss */
+/* line 45, ../sass/common.scss */
 body a:hover {
   text-decoration: none;
 }
-/* line 33, ../sass/common.scss */
+/* line 50, ../sass/common.scss */
 body img {
   border: none;
   line-height: 0;

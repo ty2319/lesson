@@ -12,6 +12,11 @@ main nav {
 		
 		li {
 			list-style: none;
+	
+			@include media($six) {
+				margin-bottom: 1em;
+				font-size 	 : 1.5em;
+			}
 		
 			&:nth-of-type(1) {
 				a {

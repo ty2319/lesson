@@ -4,14 +4,22 @@
 @import "settings";
 
 main {
+	position : $r;
+	z-index  : 1;
+	overflow : hidden;
 	
 	article {
-		border   : solid 10px;
-		display  : flex;
-		flex-wrap: wrap;
-		position : $r;
+		border 			: solid 10px;
+		display 		: flex;
+		flex-wrap 		: wrap;
+		position 		: $r;
+		background-color: $white;
+	
+		@include media($six) {
+			border-width: 7px;
+		}
 				
-		&:nth-of-type(1) {
+		&#bb {
 			border-color: $blue;
 			z-index: 3;
 			
@@ -28,7 +36,7 @@ main {
 			}
 		}
 
-		&:nth-of-type(2) {
+		&#tf {
 			border-color: $green;
 			z-index: 2;
 			
@@ -45,7 +53,7 @@ main {
 			}
 		}
 
-		&:nth-of-type(3) {
+		&#st {
 			border-color: $orange;
 			z-index: 1;
 			
@@ -75,7 +83,7 @@ main {
 				width 	: $max / 4;
 	
 				@include media($ten) {
-					width: $max / 3;
+					width: $max / 2;
 				}
 			
 				h3 {
@@ -96,7 +104,11 @@ main {
 			z-index 	: 4;
 	
 			@include media($ten) {
-  				width: $max;
+  				width 	: $max;
+			}
+	
+			@include media($six) {
+				padding : 3em 2em;
 			}
 			
 			header {
@@ -114,17 +126,52 @@ main {
 				}
 			}
 			
-			dt {
-				float:left;
-				width: $max * 0.2;
-				margin-right: 2em;
-				
-				img {
-					width : $max;
-					height: auto;
-				}
+			a {
+				color: #FF0000;
 			}
 			
+			iframe {
+				margin: 2em 0 0 0;
+				width : $max;
+			}
+			
+			dl {
+				margin-top: 2em;
+				
+				&:after {
+					clear: left;
+				}
+				
+				dt {
+					float:left;
+					width: $max * 0.2;
+					margin-right: 2em;
+	
+					@include media($six) {
+						margin-right: 1em;
+					}
+
+					img {
+						width : $max;
+						height: auto;
+					}
+				}
+
+				dd {
+					padding 	: 1.25em 0 0 1.25em;
+					text-indent : -1em;
+	
+					@include media($six) {
+						padding-top : 0.5em;
+						font-size 	: 0.9em;
+						line-height : 1.25em;
+					}
+
+					&:before {
+						content: "・";
+					}
+				}
+			}
 		}
 	}
 }

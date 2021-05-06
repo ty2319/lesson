@@ -4,36 +4,58 @@
 
 @import "settings";
 
-body {
-	font-size 	: 18px;
-	font-family :'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
-	line-height : 1.75em !important;
-	color 	 	: lighten($black, 20%);
-	position 	: $r;
-	
-	@include media($ten) {
-		font-size 	: 12px;
-	}
-	
-	.back {
-		@include abT(0,-20%,0);
-		width 	 : $max;
-		height 	 : 10em;
-		transform: rotate(-30deg);
-	}
+html {
+	background-color: $black;
 
-	a {
-		color			: #0033cc;
-		text-decoration	: none;
+	body {
+		font-size 	: 18px;
+		font-family :'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+		line-height : 1.75em !important;
+		color 	 	: lighten($black, 20%);
+		position 	: $r;
+		background 	: $white;
 
-		&:hover {
-			text-decoration: none;
+
+		@include media($forteen) {
+			font-size: 14px;
 		}
-	}
 
-	img {
-		border 		 	: none;
-		line-height 	: 0;
-		vertical-align  : bottom;
+		@include media($twelve) {
+			font-size: 12px;
+		}
+
+		@include media($ten) {
+			font-size: 16px;
+		}
+
+		@include media($six) {
+			font-size: 12px;
+		}
+
+		.back {
+			@include abT(0,-20%,0);
+			width 	 : $max;
+			height 	 : 10em;
+			transform: rotate(-30deg);
+
+			@include media($six) {
+				height 	 : 5em;
+			}
+		}
+
+		a {
+			color			: #0033cc;
+			text-decoration	: none;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		img {
+			border 		 	: none;
+			line-height 	: 0;
+			vertical-align  : bottom;
+		}
 	}
 }

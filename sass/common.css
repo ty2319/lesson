@@ -1,28 +1,43 @@
 @charset "UTF-8";
 /* CSS Document */
-body {
-  font-size: 18px;
-  font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
-  line-height: 1.75em !important;
-  color: #333333;
-  position: relative; }
-  @media all and (max-width: 1000px) {
-    body {
-      font-size: 12px; } }
-  body .back {
-    position: absolute;
-    top: 0;
-    left: -20%;
-    z-index: 0;
-    width: 100%;
-    height: 10em;
-    transform: rotate(-30deg); }
-  body a {
-    color: #0033cc;
-    text-decoration: none; }
-    body a:hover {
+html {
+  background-color: #000; }
+  html body {
+    font-size: 18px;
+    font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+    line-height: 1.75em !important;
+    color: #333333;
+    position: relative;
+    background: #fff; }
+    @media all and (max-width: 1400px) {
+      html body {
+        font-size: 14px; } }
+    @media all and (max-width: 1200px) {
+      html body {
+        font-size: 12px; } }
+    @media all and (max-width: 1000px) {
+      html body {
+        font-size: 16px; } }
+    @media all and (max-width: 600px) {
+      html body {
+        font-size: 12px; } }
+    html body .back {
+      position: absolute;
+      top: 0;
+      left: -20%;
+      z-index: 0;
+      width: 100%;
+      height: 10em;
+      transform: rotate(-30deg); }
+      @media all and (max-width: 600px) {
+        html body .back {
+          height: 5em; } }
+    html body a {
+      color: #0033cc;
       text-decoration: none; }
-  body img {
-    border: none;
-    line-height: 0;
-    vertical-align: bottom; }
+      html body a:hover {
+        text-decoration: none; }
+    html body img {
+      border: none;
+      line-height: 0;
+      vertical-align: bottom; }

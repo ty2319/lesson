@@ -2,7 +2,15 @@
 
 $max: 100%;
 
+$six: 600px;
+
+$eight: 800px;
+
 $ten: 1000px;
+
+$twelve: 1200px;
+
+$forteen: 1400px;
 
 //-------------------------------
 
@@ -25,7 +33,7 @@ $orange: #FFB303;
 
 //background ------------------------------------------------------------
 
-$modal: rgba(#000,0.8);
+$modal: rgba(0,0,0,0.8);
 
 @mixin Modal {
 	background-color: $modal;
@@ -34,7 +42,7 @@ $modal: rgba(#000,0.8);
 }
 
 
-$modal1: rgba(#5FD9FF,0.5);
+$modal1: rgba(95,217,255,0.5);
 
 @mixin Modal1 {
 	background-color: $modal1;
@@ -42,7 +50,7 @@ $modal1: rgba(#5FD9FF,0.5);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#555FD9FF,EndColorStr=#555FD9FF)";
 }
 
-$modal2: rgba(#3FBDFF,0.2);
+$modal2: rgba(63,189,255,0.2);
 
 @mixin Modal2 {
 	background-color: $modal2;
@@ -50,7 +58,7 @@ $modal2: rgba(#3FBDFF,0.2);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#223FBDFF,EndColorStr=#223FBDFF)";
 }
 
-$modal3: rgba(#92F8B2,0.5);
+$modal3: rgba(146,248,178,0.3);
 
 @mixin Modal3 {
 	background-color: $modal3;
@@ -58,7 +66,7 @@ $modal3: rgba(#92F8B2,0.5);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#5592F8B2,EndColorStr=#5592F8B2)";
 }
 
-$modal4: rgba(#FFC94D,0.5);
+$modal4: rgba(255,201,77,0.3);
 
 @mixin Modal4 {
 	background-color: $modal4;
@@ -123,11 +131,36 @@ $ab: absolute;
 //media query ---------------------
  
 @mixin media($mediaSize) {
-  @if $mediaSize <= $ten {
+  @if $mediaSize <= $six {
+    @media all and (max-width: $six) {
+      @content
+    }
+  }
+  
+  @else if $mediaSize <= $eight {
+    @media all and (max-width: $eight) {
+      @content
+    }
+  }
+  
+  @else if $mediaSize <= $ten {
     @media all and (max-width: $ten) {
       @content
     }
-  }  
+  }
+  
+  @else if $mediaSize <= $twelve {
+    @media all and (max-width: $twelve) {
+      @content
+    }
+  }
+  
+  @else if $mediaSize <= $forteen {
+    @media all and (max-width: $forteen) {
+      @content
+    }
+  }
+
 }
 
 //---------------------------------

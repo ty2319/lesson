@@ -1,67 +1,96 @@
 /* CSS Document */
 /* line 6, ../sass/header.scss */
 body > header {
-  background: url("../img/back.jpg") no-repeat fixed center;
+  background: url("../img/back.jpg") no-repeat center;
+  background-size: cover;
   border: #5FD9FF solid 10px;
   position: relative;
   z-index: 4;
 }
-/* line 12, ../sass/header.scss */
+@media all and (max-width: 600px) {
+  /* line 6, ../sass/header.scss */
+  body > header {
+    border-width: 7px;
+  }
+}
+/* line 17, ../sass/header.scss */
 body > header .back {
   background-color: rgba(95, 217, 255, 0.5);
 }
-/* line 16, ../sass/header.scss */
+/* line 21, ../sass/header.scss */
 body > header h1 {
   margin: 2em;
+  position: relative;
+  z-index: 4;
 }
-/* line 20, ../sass/header.scss */
+/* line 27, ../sass/header.scss */
 body > header h2 {
   width: 90%;
   margin: -4em 0 0 2%;
   position: relative;
   z-index: 4;
 }
-/* line 26, ../sass/header.scss */
+@media all and (max-width: 600px) {
+  /* line 27, ../sass/header.scss */
+  body > header h2 {
+    margin-left: 7%;
+  }
+}
+/* line 37, ../sass/header.scss */
 body > header h2 img {
   width: 100%;
   height: auto;
 }
-/* line 32, ../sass/header.scss */
+/* line 43, ../sass/header.scss */
 body > header nav {
+  position: relative;
   width: 46.5%;
-  margin: -4.5em auto 3em auto;
+  margin: -14em auto 3em auto;
   line-height: 1em !important;
+  z-index: 5;
 }
 @media all and (max-width: 1000px) {
-  /* line 32, ../sass/header.scss */
+  /* line 43, ../sass/header.scss */
   body > header nav {
-    margin-top: -1em;
+    margin-top: -8.5em;
   }
 }
-/* line 41, ../sass/header.scss */
+@media all and (max-width: 800px) {
+  /* line 43, ../sass/header.scss */
+  body > header nav {
+    margin-top: -5em;
+  }
+}
+@media all and (max-width: 600px) {
+  /* line 43, ../sass/header.scss */
+  body > header nav {
+    margin-top: 3em;
+  }
+}
+/* line 62, ../sass/header.scss */
 body > header nav ul {
   display: flex;
   justify-content: space-between;
 }
 @media all and (max-width: 1000px) {
-  /* line 41, ../sass/header.scss */
+  /* line 62, ../sass/header.scss */
   body > header nav ul {
     flex-direction: column;
     justify-content: space-around;
   }
 }
-/* line 50, ../sass/header.scss */
+/* line 71, ../sass/header.scss */
 body > header nav ul li {
   width: 31%;
 }
 @media all and (max-width: 1000px) {
-  /* line 50, ../sass/header.scss */
+  /* line 71, ../sass/header.scss */
   body > header nav ul li {
     width: 100%;
     margin-bottom: 1em;
   }
 }
-/* line 58, ../sass/header.scss */
+/* line 79, ../sass/header.scss */
 body > header nav ul li a {
   display: block;
   text-align: center;
@@ -70,41 +99,44 @@ body > header nav ul li a {
   padding: 0.5em 0.5em 0.3em 0.5em;
   box-sizing: border-box;
 }
-/* line 66, ../sass/header.scss */
+/* line 87, ../sass/header.scss */
 body > header nav ul li a i {
   float: left;
   margin-top: -0.05em;
 }
-/* line 71, ../sass/header.scss */
+/* line 92, ../sass/header.scss */
 body > header nav ul li a span {
   display: block;
   font-size: 0.7em;
 }
-/* line 78, ../sass/header.scss */
+/* line 99, ../sass/header.scss */
 body > header nav ul li:nth-of-type(1) a {
   background-color: #3FBDFF;
 }
-/* line 84, ../sass/header.scss */
+/* line 105, ../sass/header.scss */
 body > header nav ul li:nth-of-type(2) a {
   background-color: #0FDC4E;
 }
-/* line 90, ../sass/header.scss */
+/* line 111, ../sass/header.scss */
 body > header nav ul li:nth-of-type(3) a {
   background-color: #FFB303;
 }
-/* line 98, ../sass/header.scss */
+/* line 119, ../sass/header.scss */
 body > header p {
   text-align: center;
+  text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff;
   width: 46.5%;
   margin: 2em auto;
+  position: relative;
+  z-index: 5;
 }
-/* line 103, ../sass/header.scss */
+/* line 127, ../sass/header.scss */
 body > header p:nth-of-type(2) {
   font-size: 3em;
   transform: rotate(90deg);
   margin: 1em auto 0 auto;
 }
-/* line 108, ../sass/header.scss */
+/* line 132, ../sass/header.scss */
 body > header p:nth-of-type(2) a {
   color: #000;
 }
